@@ -18,6 +18,6 @@ namespace Insight.Cbr
         public string Code { get; set; }
 
         [XmlElement("Vnom")]
-        public string RublesAmount { get; set; }
+        public string Par { get; set; }
     }
 }
