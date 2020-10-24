@@ -1,4 +1,3 @@
-dotnet-open-source
+Insight.Cbr
 ========================
-
-Dotnet opensource repository template.
+Abstractions to interact with CBR daily [api](https://www.cbr.ru/development/DWS/)
