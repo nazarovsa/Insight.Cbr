@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insight.Cbr", "src\Insight.Cbr\Insight.Cbr.csproj", "{9DD9007B-856C-4676-B1E1-62804B5ABA78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insight.Cbr.Tests", "tests\Insight.Cbr.Tests\Insight.Cbr.Tests.csproj", "{39B4B494-E093-45A5-A9FB-A907C2F82FF5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9DD9007B-856C-4676-B1E1-62804B5ABA78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DD9007B-856C-4676-B1E1-62804B5ABA78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DD9007B-856C-4676-B1E1-62804B5ABA78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DD9007B-856C-4676-B1E1-62804B5ABA78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39B4B494-E093-45A5-A9FB-A907C2F82FF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39B4B494-E093-45A5-A9FB-A907C2F82FF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39B4B494-E093-45A5-A9FB-A907C2F82FF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39B4B494-E093-45A5-A9FB-A907C2F82FF5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
