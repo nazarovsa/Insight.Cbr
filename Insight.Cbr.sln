@@ -4,6 +4,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insight.Cbr", "src\Insight.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insight.Cbr.Tests", "tests\Insight.Cbr.Tests\Insight.Cbr.Tests.csproj", "{39B4B494-E093-45A5-A9FB-A907C2F82FF5}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{81241883-10E7-40E3-A030-8F6F08C25484}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+		publish-nuget.sh = publish-nuget.sh
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
