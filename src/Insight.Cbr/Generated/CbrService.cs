@@ -11,7 +11,7 @@ namespace Generated
 {
     
     
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.1")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     [System.ServiceModel.ServiceContractAttribute(Namespace="http://web.cbr.ru/", ConfigurationName="Generated.DailyInfoSoap")]
     public interface DailyInfoSoap
     {
@@ -51,6 +51,14 @@ namespace Generated
         [System.ServiceModel.OperationContractAttribute(Action="http://web.cbr.ru/Ruonia", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         System.Threading.Tasks.Task<Generated.ArrayOfXElement> RuoniaAsync(System.DateTime fromDate, System.DateTime ToDate);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://web.cbr.ru/RuoniaSV", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        System.Threading.Tasks.Task<Generated.ArrayOfXElement> RuoniaSVAsync(System.DateTime fromDate, System.DateTime ToDate);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://web.cbr.ru/RuoniaSVXML", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        System.Threading.Tasks.Task<System.Xml.XmlNode> RuoniaSVXMLAsync(System.DateTime fromDate, System.DateTime ToDate);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://web.cbr.ru/mrrf7D", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -329,13 +337,13 @@ namespace Generated
         System.Threading.Tasks.Task<Generated.ArrayOfXElement> GetCursOnDateAsync(System.DateTime On_date);
     }
     
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.1")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     public interface DailyInfoSoapChannel : Generated.DailyInfoSoap, System.ServiceModel.IClientChannel
     {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.1")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     public partial class DailyInfoSoapClient : System.ServiceModel.ClientBase<Generated.DailyInfoSoap>, Generated.DailyInfoSoap
     {
         
@@ -415,6 +423,16 @@ namespace Generated
         public System.Threading.Tasks.Task<Generated.ArrayOfXElement> RuoniaAsync(System.DateTime fromDate, System.DateTime ToDate)
         {
             return base.Channel.RuoniaAsync(fromDate, ToDate);
+        }
+        
+        public System.Threading.Tasks.Task<Generated.ArrayOfXElement> RuoniaSVAsync(System.DateTime fromDate, System.DateTime ToDate)
+        {
+            return base.Channel.RuoniaSVAsync(fromDate, ToDate);
+        }
+        
+        public System.Threading.Tasks.Task<System.Xml.XmlNode> RuoniaSVXMLAsync(System.DateTime fromDate, System.DateTime ToDate)
+        {
+            return base.Channel.RuoniaSVXMLAsync(fromDate, ToDate);
         }
         
         public System.Threading.Tasks.Task<Generated.ArrayOfXElement> mrrf7DAsync(System.DateTime fromDate, System.DateTime ToDate)
@@ -822,7 +840,7 @@ namespace Generated
     }
     
     [System.Xml.Serialization.XmlSchemaProviderAttribute(null, IsAny=true)]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("dotnet-svcutil-lib", "2.0.0.1")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("dotnet-svcutil-lib", "2.0.3.0")]
     public partial class ArrayOfXElement : object, System.Xml.Serialization.IXmlSerializable
     {
         
